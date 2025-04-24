@@ -23,7 +23,7 @@ El objetivo de este proyecto es crear una página web profesional para una cafet
 ## 🎨 Diseño
 
 - Diseño base hecho en Figma
-- Link al prototipo: [[text](https://www.figma.com/design/QQBrueqQV4JSZtsFxVRT0A/Untitled?node-id=0-1&t=FU6Q09aGzRJYnNRR-1)]
+- Link al prototipo: [[Figma](https://www.figma.com/design/QQBrueqQV4JSZtsFxVRT0A/Untitled?node-id=0-1&t=FU6Q09aGzRJYnNRR-1)]
 
 ---
 
