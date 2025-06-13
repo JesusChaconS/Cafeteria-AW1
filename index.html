@@ -7,17 +7,22 @@
     <title>Brisa Andina</title>
     <link rel="icon" href="recursos/imagenes/favico.webp" type="image/webp">
 
+    <link rel="stylesheet" href="recursos/css/normalize.css">
+    <link rel="stylesheet" href="recursos/css/estilos.css">
 </head>
 
 <body>
-    <header>
-        <img src="recursos/imagenes/Logo-Brisa-Andina.webp" alt="Logo Brisa Andina">
-        <nav>
-            <a href="index.html">INICIO</a>
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="menu.html">MENÚ</a>
-        </nav>
+    <header class="header">
+                <a href="index.html">
+                    <img src="recursos/imagenes/Logo-Brisa-Andina.webp" alt="Logo Brisa Andina">
+                </a>
+                <nav class="barra_de_navegacion">
+                    <a href="index.html">INICIO</a>
+                    <a href="nosotros.html">NOSOTROS</a>
+                    <a href="menu.html">MENÚ</a>
+                </nav>
     </header>
+
     <main>
         <h1>
             El Alma del Café Andino
@@ -53,17 +58,20 @@
         </section>
     </main>
 
-    <footer>
-        <nav>
-            <a href="index.html">INICIO</a>
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="menu.html">MENU</a>
-        </nav>
-        <section>
-            <img src="recursos/imagenes/brand-meta.svg" alt="logo Meta">
-            <img src="recursos/imagenes/brand-x.svg" alt="Logo X">
-        </section>
-        <h2>Derechos reservados Brisas Andinas S.A.</h2>
+    <footer class="footer">
+        <div class="footer__contenido">
+
+            <nav class="footer__nav">
+                <a href="index.html">INICIO</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="menu.html">MENU</a>
+            </nav>
+            <section class="footer__redes">
+                <img src="recursos/imagenes/brand-meta.svg" alt="logo Meta">
+                <img src="recursos/imagenes/brand-x.svg" alt="Logo X">
+            </section>
+        </div>
+        <h2 class="footer__derechos">Derechos reservados Brisas Andinas S.A.</h2>
     </footer>
 </body>
 
