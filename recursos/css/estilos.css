@@ -27,9 +27,6 @@ html {
 *:before,
 *::after {
     box-sizing: inherit;
-}
-
-body {
     margin: 0;
     padding: 0;
 }
@@ -40,6 +37,19 @@ a {
 
 img {
     max-width: 100%;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 2.3rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.7rem;
 }
 
 /* Header */
@@ -53,7 +63,6 @@ img {
     height: 20rem;
 
     padding: 0 5% 2rem 5%;
-
 }
 
 .header a {
@@ -64,8 +73,6 @@ img {
     height: 12rem;
     width: auto;
 }
-
-
 
 .barra_de_navegacion a {
     display: block;
@@ -100,52 +107,6 @@ img {
     }
 }
 
-
-/* Hero */
-/* Index */
-.hero{
-    text-align: center;
-    background-color: var(--color-fondo-hero);
-    padding: 2rem 1rem;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 4rem;
-}
-
-.hero .titulo{
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 0;
-}
-.hero a{
-    margin: 0;
-    padding: 0;
-}
-.hero img{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    max-width: 1080px;
-}
-
-.boton{
-    display: block;
-    color: var(--color-texto);
-    background-color: transparent;
-    text-align: center;
-    padding: .5rem 1rem;
-    text-transform: uppercase;
-    font-size:2rem;
-    border: 1px solid var(--color-texto);
-    width: 100%; 
-    max-width: fit-content;
-    cursor: pointer;
-    position: relative;
-}
-.hero:last-child
 /* footer */
 
 .footer {
