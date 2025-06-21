@@ -29,6 +29,7 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    
 }
 
 a {
@@ -64,6 +65,7 @@ p {
     background-color: var(--color-primario);
     height: auto;
     padding-bottom: 1rem;
+    min-width: 48rem;
 }
 
 .header__link {
@@ -133,7 +135,7 @@ p {
     background-color: var(--color-secundario);
     color: var(--color-texto-secundario);
     padding: 2rem 1rem;
-
+    min-width: 48rem;
     padding-bottom: 0;
 }
 
