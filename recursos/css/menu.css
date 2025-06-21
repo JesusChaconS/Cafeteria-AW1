@@ -1,0 +1,113 @@
+/* Titulo del Menu */
+
+.titulo_imagen {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+ /* ::before → Inserta contenido antes del contenido real del elemento. */
+.titulo_imagen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imagenes/blog1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    z-index: 1;
+}
+/* ::after → Inserta contenido después del contenido real del elemento. */
+.titulo_imagen::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.titutlo_texto {
+    position: relative;
+    z-index: 3;
+    color: white;
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* Plantillas de cuadros de producto */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cafe {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    min-height: 350px;
+}
+
+.cafe img {
+    width: 100%;
+    height: 240px;
+    object-fit: fill;
+}
+
+.cafe h3 {
+    padding: 1.5rem 1.5rem 0.8rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.cafe .descripcion {
+    padding: 0 1.5rem 1rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.cafe .precio {
+    padding: 0.8rem 1.5rem 1.5rem;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #8B4513;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .cafe {
+        min-height: 320px;
+    }
+    
+    .cafe img {
+        height: 200px;
+    }
+}
