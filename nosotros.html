@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="recursos/css/normalize.css">
     <link rel="stylesheet" href="recursos/css/estilos.css">
+    <link rel="stylesheet" href="recursos/css/nosotros.css">
 </head>
 
 <body>
@@ -26,46 +27,77 @@
 
 
     <main>
-        <figure>
-            <img src="recursos/imagenes/contacto.webp" alt="Tazas de café">
-            <h1> Contacto </h1>
-        </figure>
-
-        <section>
-            <figure>
-                <img src="/recursos/imagenes/ubicacion.svg" alt="Imagen ubicacion">
-                <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing.</figcaption>
-            </figure>
-            <figure>
-                <img src="/recursos/imagenes/telefono.svg" alt="Imagen Telefono">
-                <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing.</figcaption>
-            </figure>
-
-            <img src="recursos/imagenes/plantacióncacao-2.webp" alt="Plantaciones de café"> 
-
-            <figure>
-                <img src="/recursos/imagenes/mail.svg" alt="Imagen Mail">
-                <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
-            </figure>
-            <figure>
-                <img src="/recursos/imagenes/like.svg" alt="Imagen Like">h
-                <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
-            </figure>
-            <input type="button" value="Contactanos">
-            
-            <img src="recursos/imagenes/molienda-2.webp" alt="Granos de café molidos"> 
+        <section class="hero">
+            <h1 class="hero__titulo"> Nosotros </h1>
         </section>
+        <div class="fondo-blanco">
+            <section class="contenido-principal">
+                <figure class="contenido-principal__figura--ubicacion">
+                    <img class="contenido-principal__figura--imagen" src="/recursos/imagenes/ubicacion.svg"
+                        alt="Imagen ubicacion">
+                    <figcaption class="contenido-principal__figura--leyenda">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing.</figcaption>
+                </figure>
+                
+                <figure class="contenido-principal__figura--telefono">
+                    <img class="contenido-principal__figura--imagen" src="/recursos/imagenes/telefono.svg"
+                        alt="Imagen Telefono">
+                    <figcaption class="contenido-principal__figura--leyenda">Lorem ipsum dolor sit amet consectetur
+                        adipisicing.</figcaption>
+                </figure>
+
+                <img class="contenido-principal__figura--primerFotografia"
+                    src="recursos/imagenes/plantacióncacao-2.webp" alt="Plantaciones de café">
+
+                <figure class="contenido-principal__figura--mail">
+                    <img class="contenido-principal__figura--imagen" src="/recursos/imagenes/mail.svg"
+                        alt="Imagen Mail">
+                    <figcaption class="contenido-principal__figura--leyenda">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing.</figcaption>
+                </figure>
+
+                <figure class="contenido-principal__figura--like">
+                    <img class="contenido-principal__figura--imagen" src="/recursos/imagenes/like.svg"
+                        alt="Imagen Like">
+                    <figcaption class="contenido-principal__figura--leyenda">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing.</figcaption>
+                </figure>
+                <input class="contenido-principal__boton-contacto" type="button" value="Contactanos">
+
+                <p class="contenido-principal--parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore earum velit eveniet reprehenderit harum nam quas numquam repudiandae, consequuntur sint
+                    adipisci debitis commodi, similique laudantium aperiam id error. Culpa, exercitationem?</p>
+                <p class="contenido-principal--parrafo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus eum in eius. Quisquam ipsum ea adipisci similique ipsam eaque explicabo quam, ratione,
+                    laboriosam aperiam tenetur. Voluptatibus, corporis fuga. Officia, consequatur.</p>
+                
+                <img class="contenido-principal__figura--segundaFotografia" src="recursos/imagenes/molienda-2.webp"
+                    alt="Granos de café molidos">
+            </section>
+        </div>
+
 
 
         <!-- Seccion para SPA -->
         <!-- Contacto -->
-        <form action="contacto.html" method="post">
-            <input type="text" name="Nombre" id="id_nombre" placeholder="Nombre">
-            <input type="email" name="email" id="id_email" placeholder="e-mail@ejemplo.com">
-            <input type="number" name="numero" id="id_numero" placeholder="Ej:1234567890">
-            <textarea name="Mensaje" id="id_mensaje" placeholder="Mensaje"></textarea>
-            <button type="submit"> ENVIAR </button>
-        </form>
+        <div class="fondo-blanco">
+            <form class="formulario " action="nosotros.html" method="post">
+                <h2 class="formulario__titulo">Contacto</h2>
+
+                <label for="id_nombre">Nombre</label>
+                <input type="text" name="Nombre" id="id_nombre" placeholder="Nombre">
+
+                <label for="id_email">E-mail</label>
+                <input type="email" name="email" id="id_email" placeholder="e-mail@ejemplo.com">
+
+                <label for="id_numero">Número Telefónico</label>
+                <input type="number" name="numero" id="id_numero" placeholder="Ej:1234567890">
+
+                <label for="id_mensaje">Ingrese su mensaje:</label>
+                <textarea name="Mensaje" id="id_mensaje" placeholder="Mensaje"></textarea>
+                <button class="formulario__boton" type="submit"> ENVIAR </button>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
