@@ -65,7 +65,7 @@ p {
     background-color: var(--color-primario);
     height: auto;
     padding-bottom: 1rem;
-    min-width: 48rem;
+    
 }
 
 .header__link {
@@ -116,6 +116,7 @@ p {
     .header__barra-de-navegacion {
         display: flex;
         justify-content: space-between;
+        margin-right: 3rem;
     }
 
     .header__barra-de-navegacion--link {
@@ -135,7 +136,7 @@ p {
     background-color: var(--color-secundario);
     color: var(--color-texto-secundario);
     padding: 2rem 1rem;
-    min-width: 48rem;
+
     padding-bottom: 0;
 }
 
