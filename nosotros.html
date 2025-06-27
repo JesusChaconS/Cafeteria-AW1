@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="recursos/css/normalize.css">
     <link rel="stylesheet" href="recursos/css/estilos.css">
     <link rel="stylesheet" href="recursos/css/nosotros.css">
+    <script defer src="./recursos/js/main.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         <section class="hero">
             <h1 class="hero__titulo"> Nosotros </h1>
         </section>
-        <div class="fondo-blanco">
+        <div class="fondo-blanco" id="seccion-nosotros">
             <section class="contenido-principal">
                 <figure class="contenido-principal__figura--ubicacion">
                     <img class="contenido-principal__figura--imagen" src="/recursos/imagenes/ubicacion.svg"
@@ -62,7 +63,7 @@
                     <figcaption class="contenido-principal__figura--leyenda">Lorem ipsum, dolor sit amet consectetur
                         adipisicing.</figcaption>
                 </figure>
-                <input class="contenido-principal__boton-contacto" type="button" value="Contactanos">
+                <input class="contenido-principal__boton-contacto" type="button" value="Contactanos" id="boton-contacto">
 
                 <p class="contenido-principal--parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Inventore earum velit eveniet reprehenderit harum nam quas numquam repudiandae, consequuntur sint
@@ -80,7 +81,7 @@
 
         <!-- Seccion para SPA -->
         <!-- Contacto -->
-        <div class="fondo-blanco">
+        <div class="fondo-blanco" id="seccion-contacto" style="display: none;">
             <form class="formulario " action="nosotros.html" method="post">
                 <h2 class="formulario__titulo">Contacto</h2>
 
