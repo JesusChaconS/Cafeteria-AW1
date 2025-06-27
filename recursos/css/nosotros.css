@@ -142,10 +142,12 @@
     font-size: 1.5rem;
 }
 
-
-.formulario__boton {
-    display: block;
-    margin: auto;
+.botones_formulario{
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre botones */
+}
+.formulario_btn_volver{
     font-size: 2rem;
     width: 15rem;
     height: 5rem;
@@ -155,7 +157,16 @@
     cursor: pointer;
 
 }
+.formulario_btn_enviar{
+    font-size: 2rem;
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid #DCBB7A;
+    background-color: var(--color-texto-secundario);
+    padding: 0;
+    cursor: pointer;
 
+}
 .formulario textarea {
     height: 5rem;
 }
