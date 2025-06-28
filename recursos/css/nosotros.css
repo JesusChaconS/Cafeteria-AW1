@@ -40,7 +40,9 @@
 
 .fondo-blanco {
     background-color: var(--color-texto-secundario);
-    min-width: 48rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .contenido-principal {
@@ -85,7 +87,7 @@
 
 .contenido-principal__figura--leyenda {
     color: var(--color-texto);
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 0 1rem;
 
