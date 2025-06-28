@@ -96,7 +96,10 @@
 
                 <label for="id_mensaje">Ingrese su mensaje:</label>
                 <textarea name="Mensaje" id="id_mensaje" placeholder="Mensaje"></textarea>
-                <button class="formulario__boton" type="submit"> ENVIAR </button>
+               <div class="botones_formulario">
+                    <button class="formulario_btn_enviar" type="submit"> ENVIAR </button>
+                    <button class="formulario_btn_volver" onclick="history.back()">Volver</button>
+                </div>
             </form>
         </div>
     </main>
