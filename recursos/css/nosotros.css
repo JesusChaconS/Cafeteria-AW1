@@ -85,10 +85,9 @@
 
 .contenido-principal__figura--leyenda {
     color: var(--color-texto);
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     text-align: center;
     padding: 0 1rem;
-
 }
 
 .contenido-principal__boton-contacto {
@@ -109,7 +108,6 @@
 .contenido-principal--parrafo-1,
 .contenido-principal--parrafo-2 {
     display: none;
-    
 }
 
 /* formulario */
@@ -253,3 +251,7 @@
     }
     
 }
+    
+    /* .contenido-principal__figura--leyenda {
+        font-size: 1rem;
+    } */
