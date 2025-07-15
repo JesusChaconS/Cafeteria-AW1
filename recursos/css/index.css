@@ -51,11 +51,12 @@
 
 
 .informacionHorario {
+    word-spacing: 9px;
     background-color: var(--color-secundario);
     margin: 0;
     text-align: center;
-    font-size: 2rem;
-    padding: .2rem 0;
+    font-size: 3rem;
+    padding: .3rem 1rem;
     color: var(--color-texto-secundario);
 }
 
@@ -69,8 +70,14 @@
 .seccionPrincipal__articulo--subtitulo,
 .seccionPrincipal__articulo--parrafo {
     color: var(--color-texto-secundario);
-    padding-bottom: .5rem;
+    /* padding-bottom: .5rem; */
+    margin: 1rem 2rem;
+
 }
+.seccionPrincipal__articulo--parrafo {
+    letter-spacing: 0.2rem;
+    /* margin: 4rem auto; */
+}   
 
 .seccionPrincipal__articulo--subtitulo {
     padding-bottom: 2rem;
@@ -95,21 +102,21 @@
     .seccionPrincipal__articulo--titulo,
     .seccionPrincipal__articulo--subtitulo,
     .seccionPrincipal__articulo--parrafo {
-        padding: .5rem 1rem;
+        padding: .6rem 3rem;
     }
     .seccionPrincipal__articulo--subtitulo{
         padding-bottom: 3rem
     }
 
     h2 {
-        font-size: 4rem;
-    }
-
-    h3 {
         font-size: 3.5rem;
     }
 
+    h3 {
+        font-size: 2.6rem;
+    }
+
     p {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
