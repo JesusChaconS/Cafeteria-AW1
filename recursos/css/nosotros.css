@@ -122,12 +122,10 @@
 .formulario label {
     font-size: 1.3rem;
 }
-
-.formulario input,
+/*  preserva el diseño de los inputs de texto y evita que los botones hereden estilos indeseados*/
+.formulario input:not([type="button"]):not([type="submit"]),
 .formulario textarea {
     display: block;
-    margin-bottom: 1rem;
-    align-items: center;
     margin: 1rem auto;
     width: 80%;
     height: 2.5rem;
@@ -141,8 +139,8 @@
 }
 .formulario_btn_volver,
 .formulario_btn_enviar {
-  font-size: 1.2rem;
-  width: 10rem;
+  font-size: 2rem;
+  width: 15rem;
   height: 3rem;
   border: 2px solid #000000;
   background-color: var(--color-fondo-hero);
@@ -150,9 +148,38 @@
   cursor: pointer;
 }
 .formulario textarea {
-    height: 5rem;
+    height: 70px;
+}
+.formulario {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+.formulario__titulo {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formulario label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario textarea {
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
 @media (width > 768px) {
     .hero {
         max-width: 100%;
