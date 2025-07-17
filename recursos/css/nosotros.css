@@ -3,8 +3,7 @@
     background-image: url('../imagenes/contacto.webp');
     width: 100%;
     height: 40rem;
-    min-width: 48rem;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,24 +12,18 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    filter: grayscale(40%);
+    /* filter: grayscale(50%);
     filter: opacity(90%);
-    filter: contrast(90%);
-
+    filter: contrast(90%); */
 }
 
 .hero__titulo {
-    margin: auto;
-    padding: 2rem;
-    font-size: 5rem;
-    text-align: center;
-    align-items: center;
-    color: var(--color-texto-secundario);
-    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
+    position: relative;
+    z-index: 3;
+    color: white;
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 0;
 }
 
 
@@ -50,7 +43,7 @@
     padding: 1rem;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 30rem 35rem 30rem 35rem 10rem;
 
 }
@@ -94,10 +87,10 @@
     grid-column: 1/3;
     grid-row: 5/6;
     font-size: 2rem;
-    width: 15rem;
+    width: 18rem;
     height: 5rem;
-    border: 1px solid #DCBB7A;
-    background-color: var(--color-texto-secundario);
+    border: 3px solid #000000;
+    background-color: var(--color-fondo-hero);
     padding: 1rem;
     cursor: pointer;
     margin: auto;
@@ -108,6 +101,7 @@
 .contenido-principal--parrafo-1,
 .contenido-principal--parrafo-2 {
     display: none;
+    letter-spacing: 0.2rem;
 }
 
 /* formulario */
@@ -145,25 +139,15 @@
     justify-content: center;
     gap: 1rem; /* Espacio entre botones */
 }
-.formulario_btn_volver{
-    font-size: 2rem;
-    width: 15rem;
-    height: 5rem;
-    border: 1px solid #DCBB7A;
-    background-color: var(--color-texto-secundario);
-    padding: 0;
-    cursor: pointer;
-
-}
-.formulario_btn_enviar{
-    font-size: 2rem;
-    width: 15rem;
-    height: 5rem;
-    border: 1px solid #DCBB7A;
-    background-color: var(--color-texto-secundario);
-    padding: 0;
-    cursor: pointer;
-
+.formulario_btn_volver,
+.formulario_btn_enviar {
+  font-size: 1.2rem;
+  width: 10rem;
+  height: 3rem;
+  border: 2px solid #000000;
+  background-color: var(--color-fondo-hero);
+  padding: 0;
+  cursor: pointer;
 }
 .formulario textarea {
     height: 5rem;
@@ -173,6 +157,7 @@
     .hero {
         max-width: 100%;
     }
+
 
     .contenido-principal {
         grid-template-columns: repeat(4, 1fr);
@@ -223,6 +208,9 @@
         display: block;
     }
 
+    .contenido-principal__figura--leyenda {
+        font-size: 2.3rem;
+    }
     .contenido-principal--parrafo-1{
         display: block;
         grid-column: 1/3;
@@ -251,7 +239,13 @@
     }
     
 }
-    
+
+@media (width < 570px) {
+    .hero__titulo {
+        font-size: 6.5rem;
+    }
+
+}
     /* .contenido-principal__figura--leyenda {
         font-size: 1rem;
     } */
