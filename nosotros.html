@@ -27,7 +27,7 @@
 
     <main>
         <section class="hero">
-            <h1 class="hero__titulo"> Nosotros </h1>
+            <h1 class="hero__titulo"> NOSOTROS </h1>
         </section>
         <div class="fondo-blanco" id="seccion-nosotros">
             <section class="contenido-principal">
@@ -58,11 +58,10 @@
                 <figure class="contenido-principal__figura--like">
                     <img class="contenido-principal__figura--imagen" src="/recursos/imagenes/like.svg"
                         alt="Imagen Like">
-                    <figcaption class="contenido-principal__figura--leyenda"><a
-                            href="https://www.gmail.com">abrisaandina@cafesdepatagonia.com</a> —
-                        Escribinos y conocé más de nuestra historia.</figcaption>
+                    <figcaption class="contenido-principal__figura--leyenda">
+                     Contactanos con el boton en pantalla, estaremos atentos a tu mensaje</figcaption>
                 </figure>
-                <input class="contenido-principal__boton-contacto" type="button" value="Contactanos" id="boton-contacto">
+                <input class="contenido-principal__boton-contacto" type="button" value="CONTACTANOS" id="boton-contacto">
 
                 <p class="contenido-principal--parrafo-1">Desde 1913, Brisa Andina representa el espíritu cálido y
                     acogedor de las tardes patagónicas. Nacimos como una pequeña casa de té, y con los años nos
@@ -81,7 +80,7 @@
         <!-- Contacto -->
         <div class="fondo-blanco" id="seccion-contacto" style="display: none;">
             <form class="formulario " action="nosotros.html" method="post">
-                <h2 class="formulario__titulo">Contacto</h2>
+                <h2 class="formulario__titulo">CONTACTO</h2>
 
                 <label for="id_nombre">Nombre</label>
                 <input type="text" name="Nombre" id="id_nombre" placeholder="Nombre">
@@ -95,8 +94,8 @@
                 <label for="id_mensaje">Ingrese su mensaje:</label>
                 <textarea name="Mensaje" id="id_mensaje" placeholder="Mensaje"></textarea>
                <div class="botones_formulario">
-                    <button class="formulario_btn_enviar" type="submit"> ENVIAR </button>
-                    <button class="formulario_btn_volver" onclick="history.back()">Volver</button>
+                    <input class="formulario_btn_enviar" type="button" value="ENVIAR" id="boton-enviar">
+                    <input class="formulario_btn_volver" type="button" value="VOLVER" id="boton-volver">
                 </div>
             </form>
         </div>
